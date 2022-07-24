@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="breakOut.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <title>nearyGames - BreakOut</title>
+    <link rel="icon" type="image/x-icon" href="/img/nearyGames.png">
+</head>
+<body>
+    <div class="container">
+        <div id="score">0</div>
+        <p>Break all <span>15</span> to win</p>
+    </div>
+    <div class="container2">
+        <div class="grid"></div> 
+        <div class="buttons">
+            <button class="leftButton" onclick="moveMobileLeft()">Left</button>
+            <button class="rightButton" onclick="moveMobileRight()">Right</button>
+        </div> 
+    </div>
+        
+    </div>
+    <footer class="foot">
+        <p>Game by: <a href="https://nearygames.com">nearyGames</a></p>
+        <button id="newGame" onclick="location.reload()">New Game</button>
+    </footer>
+    <script src="breakOut.js"></script>
+</body>
+</html>
