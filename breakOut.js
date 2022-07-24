@@ -26,7 +26,7 @@ class Block {
     }
 }
 
-//array of blocks 
+// array of blocks 
 
 const blocks = [
     new Block(5, 130),
@@ -46,7 +46,7 @@ const blocks = [
     new Block(205, 110),
 ]
 
-//draw all blocks
+// draw all blocks
 
 function addBlocks() {
     for (let i = 0; i < blocks.length; i++) {
@@ -59,7 +59,7 @@ function addBlocks() {
 }
 addBlocks();
 
-//add user
+// add user
 
 const user = document.createElement('div');
 user.classList.add('user');
@@ -163,6 +163,7 @@ function checkForCollision() {
     }
 
     // check for wall collision
+    
     if (
         ballCurrentPosition[0] >= (boardWidth - ballDiameter) || 
         ballCurrentPosition[1] >= (boardHeight - ballDiameter) ||
@@ -180,6 +181,7 @@ function checkForCollision() {
     }
 
     // check for game over
+    
     if (ballCurrentPosition[1] <= 0) {
         clearInterval(timerId);
         scoreDisplay.innerHTML = 'You lose!';
