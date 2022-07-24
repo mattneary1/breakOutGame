@@ -1,0 +1,182 @@
+* {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.homeContainer {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-style: italic;
+    animation: slide-in 2s, fadeIn 3s;
+}
+
+h2 {
+    animation: fadeIn 7s;
+}
+
+.start {
+    margin: 50px;
+    animation: grow-and-shrink 2s;
+    animation-delay: 1s;
+}
+
+#score {
+    font-size: 30px;
+    margin-top: 30px;
+    animation: fadeIn 2s;
+}
+
+p {
+    letter-spacing: 1.5px;
+    font-style: italic;
+}
+
+span {
+    color: #00FF50;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+.grid {
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    border: solid 1px white;
+    margin-top: 0;
+}
+
+.buttons {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    margin-top: 200px;
+    width: 90px;
+    border-radius: 10px;
+    padding: 4px;
+    color: #00FF50;
+}
+
+#newGame {
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #100c08;
+    box-shadow: -1px 1px darkgray;
+    cursor: pointer;
+}
+
+.rightButton:hover {
+    box-shadow: 1px 1px gray;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block {
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: #00FF50;
+    border-radius: 10px;
+}
+
+.user {
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.ball {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    animation: slide-in 2s;
+}
+
+footer, a, p {
+    font-size: .8rem;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+a {
+    color: gray;
+}
+
+a:hover {
+    color: #00FF50;
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0.25;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+@keyframes fadeIn {
+    0% { 
+        opacity: 0; 
+    }
+    100% { opacity: 1; 
+    }
+}
+
+@keyframes grow-and-shrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
