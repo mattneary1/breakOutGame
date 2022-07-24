@@ -1,2 +1,2 @@
 # breakOutGame
-A Clone of Atari's Classic Breakout
+A clone of Atari's classic Breakout
