@@ -57,6 +57,7 @@ function addBlocks() {
         grid.appendChild(block);
     }
 }
+
 addBlocks();
 
 // add user
@@ -188,6 +189,8 @@ function checkForCollision() {
         document.removeEventListener('keydown', moveUser);
     }
 }
+
+// change ball direction
 
 function changeDirection() {
     if (xDirection === 2 && yDirection === 2) {
